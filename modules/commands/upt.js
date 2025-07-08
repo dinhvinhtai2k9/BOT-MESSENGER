@@ -58,21 +58,19 @@ module.exports.run = async ({ api, event, Users, Threads }) => {
     // Gửi tin nhắn với thông tin đã xử lý
     const uptimeMessage = `══════╗ ⇲  Uptime  ⇱ ╚══════
 
-☍ · Bây giờ là: ${gio}
-☍ · Thời gian đã hoạt động: ${hours} giờ ${minutes} phút ${seconds} giây.
-☍ · Dấu lệnh: ${prefix}
-☍ · Phiên bản: 3.3.1
-☍ · Tổng nhóm: ${global.data.allThreadID.length}
-☍ · Tổng người dùng: ${global.data.allUserID.length}
-☍ · Thông tin hệ thống:
-  - Hệ điều hành: ${platform}
-  - Kiểu Arch: ${arch}
-  - CPU: ${core} core(s) - ${cpu_model} - ${speed}MHz
-  - Số Package và Dev Package: ${dependencies} và ${devDependencies}
-  - Dung lượng trống: ${gb_fm}GB (Đã dùng ${u_mem}GB trên tổng ${gb_tm}GB)
-☍ · IP Server: ${nwif['eth0'][0].address} - ${nwif['eth0'][0].family}
-☍ · Ping : ${Date.now() - timeStart}ms
-☍ · Tình trạng: ${
+⏰ Bây giờ là: ${gio}
+⏱️ Thời gian đã hoạt động: ${hours} giờ ${minutes} phút ${seconds} giây.
+📝 Dấu lệnh: ${prefix}
+🔢 Phiên bản: 3.3.1
+🧑‍🤝‍🧑 Tổng nhóm: ${global.data.allThreadID.length}
+👥 Tổng người dùng: ${global.data.allUserID.length}
+🖥️ Hệ điều hành: ${platform}
+🧮 CPU: ${core} core(s) - ${cpu_model} - ${speed}MHz
+🗂️ Số Package và Dev Package: ${dependencies} và ${devDependencies}
+💾 Dung lượng trống: ${gb_fm}GB (Đã dùng ${u_mem}GB trên tổng ${gb_tm}GB)
+🔌 IP Server: ${nwif['eth0'][0].address} - ${nwif['eth0'][0].family}
+🌐 Ping : ${Date.now() - timeStart}ms
+📊 Tình trạng: ${
       Date.now() - timeStart < 100
         ? 'Rất ổn định'
         : Date.now() - timeStart < 300
