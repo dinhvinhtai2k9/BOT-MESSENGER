@@ -77,7 +77,7 @@ module.exports.run = async ({ api, event, Users, Threads }) => {
           ? 'Khá ổn định'
           : 'Khá chậm'
     }
-☍ · Yêu cầu bởi: ${name} - ${threadName || 'Cuộc trò chuyện riêng với bot'}`;
+👤 Yêu cầu bởi: ${name} - ${threadName || 'Cuộc trò chuyện riêng với bot'}`;
 
     api.sendMessage(uptimeMessage, event.threadID, event.messageID);
 
